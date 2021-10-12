@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn js</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Css/all.min.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+
+  <div style="font-family: 'Courier New', Courier, monospace;" class="dark">
+
+    <button id="btn2" class="btn btn-light btn-block btn2">Light Mood</button>
+   
+    <h1 style=" margin-top: 100px;" class="text-center display-4 text-info">Welcome At <span style="color:indigo;">ToDo</span> App</h1>
+    <button id="showmodil" class="btn btn-info w-75 btn-block mx-auto">Add Task From Here</button>
+    
+    
+    <div class="container col-md-8 mt-5">
+      <div class="card">
+        <div class="card-body">
+          <div id="allTasks">
+
+          </div>
+          <div id="noTasks" class="alert alert-danger">
+            No Task Add Yet
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="model" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 style="color:dodgerblue ;" class="modal-title">Add Task</h5>
+            <button onclick="showmodilfun()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="from-group">
+                    <label for="">Add Task</label>
+                    <input type="text" id="taskInput" class="form-control">
+                  </div>
+                  <button id="addBtn" class="btn my-2 btn-info btn-block">Click</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button onclick="showmodilfun()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>

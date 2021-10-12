@@ -1,0 +1,32 @@
+/* .dark{
+    background-color: #111;
+    color: white;
+} */
+
+
+ /* body{
+    background-color: #111;
+}  */
+
+.card{
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.ckeck{
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+.dark{
+    background-color: black;
+    color: blanchedalmond;
+    height: 100vh;
+}
